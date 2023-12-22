@@ -31,10 +31,6 @@ async function queryOpenAI(userInput) {
       frequency_penalty: 0,
       presence_penalty: 0,
     });
-    // console.log(
-    //   'OpenAI Response:',
-
-    // );
 
     return chatCompletion.choices[0].message;
   } catch (error) {
